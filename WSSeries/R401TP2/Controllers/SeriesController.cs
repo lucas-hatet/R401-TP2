@@ -37,8 +37,10 @@ namespace R401TP2.Controllers
             {
                 return NotFound();
             }
-
-            return serie;
+            else
+            {
+                return serie;
+            }
         }
 
         // PUT: api/Series/5

@@ -43,4 +43,19 @@ public partial class Serie
     [Column("network")]
     [StringLength(50)]
     public string? Network { get; set; }
+
+    public override bool Equals(object? obj)
+    {
+        if (!(obj is null) && obj is Serie)
+        {
+            return ((Serie)obj).Serieid == Serieid &&
+                ((Serie)obj).Titre == Titre &&
+                ((Serie)obj).Resume == Resume &&
+                ((Serie)obj).Nbsaisons == Nbsaisons &&
+                ((Serie)obj).Nbepisodes == Nbepisodes &&
+                ((Serie)obj).Anneecreation == Anneecreation &&
+                ((Serie)obj).Network == Network;
+        }
+        else return false;
+    }
 }

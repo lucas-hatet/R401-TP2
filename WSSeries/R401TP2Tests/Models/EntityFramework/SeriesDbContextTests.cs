@@ -93,7 +93,7 @@ namespace R401TP2.Models.EntityFramework.Tests
             // Act
             var result = controller.GetSerie(1);
             // Assert
-            Assert.AreEqual(result.Result, serie1);
+            Assert.AreEqual(result.Result.Value, serie1);
         }
 
 
@@ -112,6 +112,7 @@ namespace R401TP2.Models.EntityFramework.Tests
         {
             // Act
             var result = controller.DeleteSerie(1);
+            controller.PostSerie(error1);
             // Assert
             Assert.IsInstanceOfType(result.Result, typeof(NoContentResult));
         }
