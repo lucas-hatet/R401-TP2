@@ -1,5 +1,5 @@
-# 📁 Portfolio
-*Architecture logiciel* et *Qualité de développement* - TP2
+# 📁 R401-TP2
+*Architecture logiciel* and *Qualité de développement* - TP2
 
 ## 🛠 Technologies Used
 
