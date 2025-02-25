@@ -61,6 +61,7 @@ namespace R401TP2.Models.EntityFramework.Tests
             controller = null;
             serie1 = null;
             serie2 = null;
+            error1 = null;
         }
 
 
